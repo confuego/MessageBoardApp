@@ -1,0 +1,42 @@
+<div class="container">
+  <mat-card class="error-message" *ngIf="errors && errors.length > 0">
+    <mat-card-title class="header">We're Sorry there was an error.</mat-card-title>
+    <ul>
+      <li *ngFor="let error of errors">{{ error }}</li>
+    </ul>
+  </mat-card>
+  <mat-card class="form-container" color="primary">
+    <mat-card-title>Send a Message</mat-card-title>
+    <mat-form-field>
+      <input matInput placeholder="Name" name="name" [(ngModel)]="message.user">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput placeholder="Title" name="title" [(ngModel)]="message.title">
+    </mat-form-field>
+    <mat-form-field>
+      <textarea matInput placeholder="Description" name="description" [(ngModel)]="message.description"></textarea>
+    </mat-form-field>
+    <button color="primary" type="button" mat-button (click)="sendMessage(message)">Send</button>
+  </mat-card>
+  <mat-card class="form-container">
+    <mat-card-title>
+      Messages
+      <button mat-button color="primary" (click)="messages = []">Clear</button>
+    </mat-card-title>
+    <mat-accordion>
+        <mat-expansion-panel *ngFor="let message of messages">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{ message.user }}
+            </mat-panel-title>
+            <mat-panel-description>
+              {{ message.title }}
+            </mat-panel-description>
+          </mat-expansion-panel-header>   
+          <mat-form-field>
+            <textarea matInput placeholder="{{message.description}}" disabled></textarea>
+          </mat-form-field>
+        </mat-expansion-panel>
+      </mat-accordion>
+  </mat-card>
+</div>

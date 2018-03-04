@@ -1,0 +1,33 @@
+.form-container {
+    float: left;
+    width: 800px;
+    margin: 15px;
+}
+
+.form-container > * {
+    width: 100%;
+}
+
+.error-message {
+    max-width: 800pc;
+    position: relative;
+    min-height: 1em;
+    margin: 1em 0;
+    background-color: #fff6f6;
+    padding: 1em 1.5em;
+    line-height: 1.4285em;
+    color: #9f3a38;
+    border-radius: .28571429rem;
+    box-shadow: 0 0 0 1px rgba(34,36,38,.22) inset, 0 0 0 0 transparent;
+}
+
+.error-message .header {
+    display: block;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-weight: 700;
+    margin: -.14285714em 0 0 0;
+}
+
+.container {
+    background: #f8f8f9;
+}

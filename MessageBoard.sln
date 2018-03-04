@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageBoardApi", "MessageBoardApi\MessageBoardApi.csproj", "{B7E6F354-863A-45B1-8843-1D74594AE378}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{805ED44C-EF9C-40B5-AB14-94D52EA7DA6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{B477217D-C3F2-4AE7-BD2B-1164CC0AC02B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		|Any CPU = |Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7E6F354-863A-45B1-8843-1D74594AE378}.|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7E6F354-863A-45B1-8843-1D74594AE378}.|Any CPU.Build.0 = Debug|Any CPU
+		{805ED44C-EF9C-40B5-AB14-94D52EA7DA6C}.|Any CPU.ActiveCfg = Debug|Any CPU
+		{805ED44C-EF9C-40B5-AB14-94D52EA7DA6C}.|Any CPU.Build.0 = Debug|Any CPU
+		{B477217D-C3F2-4AE7-BD2B-1164CC0AC02B}.|Any CPU.ActiveCfg = Debug|Any CPU
+		{B477217D-C3F2-4AE7-BD2B-1164CC0AC02B}.|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+EndGlobal
